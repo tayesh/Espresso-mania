@@ -1,10 +1,7 @@
-
-import SingleReview from '../../Single-review/Review';
-import useReviews from '../hooks/useReviews';
 import './home.css'
 import '../Review/reviews.css'
 
-const Home = (props) => {
+const Home = () => {
 
     return (
         <div>
