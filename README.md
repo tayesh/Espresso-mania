@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 ## This project is about
- Markup : - Product Intro  
-          - Customer Review
-          - Dashboard
+ - Product Intro.\  
+          - Customer Review.\
+          - Dashboard.\
           - Blog 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
