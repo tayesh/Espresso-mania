@@ -1,7 +1,11 @@
-import React from 'react';
-import './home.css'
 
-const Home = () => {
+import SingleReview from '../../Single-review/Review';
+import useReviews from '../hooks/useReviews';
+import './home.css'
+import '../Review/reviews.css'
+
+const Home = (props) => {
+
     return (
         <div>
             <div className='grid row container-fluid'>
@@ -23,8 +27,12 @@ const Home = () => {
                 </div>
             </div>
             <div className='review-section'>
-                <h2 className='Customer-review-heading mx-auto'>Customer review</h2>
-                <div>
+                <h2 className='Customer-review-heading mx-auto'>Customer reviews(3)</h2>
+                <div className='review-container'>
+                    {/* 
+                    <SingleReview review={props.review[0]}></SingleReview>
+                    <SingleReview review={props.review[1]}></SingleReview>
+                    <SingleReview review={props.review[2]}></SingleReview> */}
 
                 </div>
                 <h4 className='mx-auto review-button'>See All Reviews</h4>
