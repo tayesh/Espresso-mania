@@ -45,8 +45,9 @@ const Chart = () => {
         <div>
             <div className='grid row p-5 container-fluid'>
                 <div className='col-lg-6 col-md-12 p-5'>
-                    <AreaChart width={730} height={250} data={data}
-                        margin={{ top: 10, right: 100, left: 0, bottom: 0 }}>
+                    <AreaChart width={530} height={250} data={data}
+                        margin={{ top: 10, right: 10, left: 10, bottom: 0 }} className='container-fluid
+                        '>
 
                         <defs>
                             <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">

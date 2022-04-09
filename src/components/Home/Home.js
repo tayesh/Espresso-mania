@@ -1,7 +1,16 @@
 import './home.css'
 import '../Review/reviews.css'
+import { useEffect, useState } from 'react';
+import SingleReview from '../../Single-review/Review';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
+    const [reviews, setReviews] = useState([])
+    useEffect(() => {
+        fetch('fakeReview.json')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
 
     return (
         <div>
@@ -26,13 +35,14 @@ const Home = () => {
             <div className='review-section'>
                 <h2 className='Customer-review-heading mx-auto'>Customer reviews(3)</h2>
                 <div className='review-container'>
-                    {/* 
-                    <SingleReview review={props.review[0]}></SingleReview>
-                    <SingleReview review={props.review[1]}></SingleReview>
-                    <SingleReview review={props.review[2]}></SingleReview> */}
+
+                    <SingleReview review={reviews[0]}></SingleReview>
+                    <SingleReview review={reviews[1]}></SingleReview>
+                    <SingleReview review={reviews[2]}></SingleReview>
+
 
                 </div>
-                <h4 className='mx-auto review-button'>See All Reviews</h4>
+                <Link to={'/review'}><h4 className='mx-auto review-button mb-3'>See All Reviews</h4></Link>
             </div>
         </div>
     );

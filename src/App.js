@@ -5,7 +5,6 @@ import Blogs from './components/blogs/Blogs';
 import Chart from './components/chart/Chart';
 import Header from './components/header/Header';
 import Home from './components/Home/Home';
-import useReviews from './components/hooks/useReviews';
 import NotFound from './components/Not-Found/NotFound';
 import Review from './components/Review/Reviews';
 
